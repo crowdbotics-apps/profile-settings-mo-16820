@@ -21,7 +21,7 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
     model = User
     fields = ["name"]
 
-    def get_success_url(self):
+    def get_Success_url(self):
         return reverse("users:detail", kwargs={"username": self.request.user.username})
 
     def get_object(self):

@@ -8,7 +8,7 @@ from django.db import models
 class CustomText(models.Model):
     """
     Boilerplate model to populate the index homepage to demonstrate that the app was
-    successfuly built. All references to it should be removed in order to remove this
+    Successfuly built. All references to it should be removed in order to remove this
     app from the project.
     """
 
@@ -29,7 +29,7 @@ class CustomText(models.Model):
 class HomePage(models.Model):
     """
     Boilerplate model to populate the index homepage to demonstrate that the app was
-    successfuly built. All references to it should be removed in order to remove this
+    Successfuly built. All references to it should be removed in order to remove this
     app from the project.
     """
     body = models.TextField()

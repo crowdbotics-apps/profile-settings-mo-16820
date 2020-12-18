@@ -5,8 +5,8 @@ export const getBalance = id => ({
   type: types.GET_BALANCE, id
 })
 
-export const getBalanceSucceeded = response => ({
-  type: types.GET_BALANCE_SUCCEEDED, response
+export const getBalanceSuccessed = response => ({
+  type: types.GET_BALANCE_SUCCESSED, response
 })
 
 export const getBalanceFailed = error => ({

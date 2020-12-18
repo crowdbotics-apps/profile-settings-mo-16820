@@ -16,7 +16,7 @@ class TestUserUpdateView:
         https://github.com/pytest-dev/pytest-django/pull/258
     """
 
-    def test_get_success_url(
+    def test_get_Success_url(
         self, user: settings.AUTH_USER_MODEL, request_factory: RequestFactory
     ):
         view = UserUpdateView()
@@ -25,7 +25,7 @@ class TestUserUpdateView:
 
         view.request = request
 
-        assert view.get_success_url() == f"/users/{user.username}/"
+        assert view.get_Success_url() == f"/users/{user.username}/"
 
     def test_get_object(
         self, user: settings.AUTH_USER_MODEL, request_factory: RequestFactory

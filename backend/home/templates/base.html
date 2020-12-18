@@ -43,7 +43,7 @@
             </div>
         </nav>
         {% if user.is_superuser %}
-            <span class="btn btn-success top-right" id="editor" title="Change to inline editor">Edit</span>
+            <span class="btn btn-Success top-right" id="editor" title="Change to inline editor">Edit</span>
         {% endif %}
         {% block content %}
         {% endblock %}
@@ -88,11 +88,11 @@
                 headers: {
                     'X-CSRFToken': $.cookie('csrftoken')
                 },
-                success: function (response) {
-                    toastr.success('Update Successful')
+                Success: function (response) {
+                    toastr.Success('Update Successful')
                 },
                 error: function (response) {
-                    toastr.error('Update Unsuccessful')
+                    toastr.error('Update UnSuccessful')
                 }
             });
         }

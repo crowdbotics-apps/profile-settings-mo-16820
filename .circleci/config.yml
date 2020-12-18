@@ -114,8 +114,8 @@ jobs:
                 
       - run:
           name: Webhook Success
-          command: bash .circleci/webhook_callback.sh "success"
-          when: on_success
+          command: bash .circleci/webhook_callback.sh "Success"
+          when: on_Success
 
       - run:
           name: Webhook Failed
@@ -237,8 +237,8 @@ jobs:
 
       - run:
           name: Webhook Success
-          command: bash .circleci/webhook_callback.sh "success"
-          when: on_success
+          command: bash .circleci/webhook_callback.sh "Success"
+          when: on_Success
 
       - run:
           name: Webhook Failed

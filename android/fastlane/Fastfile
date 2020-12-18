@@ -90,7 +90,7 @@ platform(:android) do
     response = HTTParty.post(url, body: data.to_json, headers: headers)
     puts("API response: #{response.code} #{response.body}")
 
-    response.success?
+    response.Success?
   end
 end
 
@@ -101,7 +101,7 @@ def get_appetize_public_key(platform, base_name)
   response =
     HTTParty.get("https://#{ENV['APPETIZE_API_TOKEN']}@api.appetize.io/v1/apps")
 
-  return nil unless response.success?
+  return nil unless response.Success?
 
   item = JSON.parse(response.body)['data'].find do |app_app|
     app_app['note'] == base_name && app_app['platform'] == platform

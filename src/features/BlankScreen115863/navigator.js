@@ -1,12 +1,15 @@
 import { createStackNavigator } from "react-navigation-stack";
 
-import Blank from "./screens/blank";
+import LoginSignup from "./screens/blank";
+import PasswordRecover from "./screens/PasswordRecover";
 
-export default BlankBlueprintNavigator = createStackNavigator(
+export default LoginSignupBlueprintNavigator = createStackNavigator(
   {
-    Blank: { screen: Blank }
+    LoginSignup,
+    PasswordRecover
   },
   {
-    initialRouteName: "Blank"
+    initialRouteName: "LoginSignup",
+    defaultNavigationOptions: ({ navigation }) => ({ header: null }),
   }
 );

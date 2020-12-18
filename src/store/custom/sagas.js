@@ -8,7 +8,7 @@ import * as types from "./constants"
 function* getBalanceWorker(action) {
   try {
     const result = yield call(customApiService.getBalance, action)
-    yield put(actions.getBalanceSucceeded(result))
+    yield put(actions.getBalanceSuccessed(result))
   } catch (err) {
     yield put(actions.getBalanceFailed(err))
   }
